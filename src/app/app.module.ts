@@ -6,10 +6,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 import { HomeComponent } from './components/pages/home.component';
 import { AboutComponent } from './components/pages/about.component';
-
+import { routing } from './app.routing';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, routing ],
   declarations: [ 	AppComponent,
 				NavbarComponent,
 				JumbotronComponent,
@@ -18,4 +18,5 @@ import { AboutComponent } from './components/pages/about.component';
 			],
   bootstrap:    [ AppComponent ]
 })
+
 export class AppModule { }
